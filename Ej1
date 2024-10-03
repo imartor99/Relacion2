@@ -1,0 +1,29 @@
+Algoritmo ej1_relacion2
+	
+	Escribir "Generando numero al azar"
+	numa<- azar(100) + 1
+	
+	intentosRest <- 10
+	intentosRealizados <- 0
+	
+	Mientras intentosRest > 0 Hacer
+		Escribir "Introduce el número a adivinar"
+		Leer num
+		intentosRealizados <- +1
+		intentosRest <- intentosRest - 1
+		Si num < numa Entonces
+			Escribir "El número a adivinar es mayor"
+		SiNo
+			
+			Si num > numa Entonces
+				Escribir "El número a adivinar es menor"
+			SiNo
+				Escribir "Has adivinado el número"
+			Fin Si
+			Fin Si
+	
+	Fin Mientras
+	
+	Escribir "Has agotado tus intentos, el numero era:" ,  numa
+
+FinAlgoritmo
