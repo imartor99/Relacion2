@@ -1,0 +1,15 @@
+Algoritmo ej5
+	//Escribir un programa que imprima todos los números pares entre dos números que se le pida al
+	//usuario.
+	
+	Escribir "Primer numero: "
+	Leer num1
+	Escribir "Segundo numero: "
+	Leer num2
+	Para cont<-num1 Hasta num2 Con Paso 1 Hacer
+		Si cont % 2 = 0 Entonces
+			Escribir cont
+		FinSi
+	FinPara
+	
+FinAlgoritmo
