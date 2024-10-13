@@ -1,0 +1,14 @@
+Algoritmo ej4
+	// Algoritmo que pida caracteres e imprima 'VOCAL' si son vocales y 'NO VOCAL' en caso contrario, el
+	// programa termina cuando se introduce un espacio.
+	Definir letra Como Cadena
+	Mientras letra<>'0' Hacer
+		Escribir 'Pon una letra: (0 PARA SALIR)'
+		Leer letra
+		Si letra='a' O letra='e' O letra='i' O letra='o' O letra='u' Entonces
+			Escribir 'VOCAL'
+		SiNo
+			Escribir 'NO VOCAL'
+		FinSi
+	FinMientras
+FinAlgoritmo
