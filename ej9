@@ -1,0 +1,11 @@
+Algoritmo ej9
+	// Algoritmo que muestre la tabla de multiplicar de los números 1,2,3,4 y 5
+	num <- 1
+	Para cont2<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir 'Tabla del ', cont2
+		Para cont<-1 Hasta 10 Con Paso 1 Hacer
+			Escribir num, 'x', cont, '=', num*cont
+		FinPara
+		num <- num+1
+	FinPara
+FinAlgoritmo
