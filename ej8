@@ -1,0 +1,13 @@
+Algoritmo ej8
+	// Escribe un programa que dados dos números, uno real (base) y un entero positivo (exponente), saque
+	// por pantalla el resultado de la potencia. No se puede utilizar el operador de potencia.
+	Escribir 'Escribir numero (Base): '
+	Leer base
+	Escribir 'Numero: (Potencia): '
+	Leer pote
+	total <- 1
+	Para cont<-1 Hasta pote Con Paso 1 Hacer
+		total <- total*base
+	FinPara
+	Escribir 'Total:', total
+FinAlgoritmo
