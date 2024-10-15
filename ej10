@@ -1,0 +1,25 @@
+Algoritmo ej10
+	//Escribe un programa que diga si un número introducido por teclado es o no primo. Un número primo
+    //es aquel que sólo es divisible entre él mismo y la unidad. Nota: Es suficiente probar hasta la raíz
+	//cuadrada del número para ver si es divisible por algún otro número.
+	
+	Definir num, primo, i Como Entero
+	Escribir 'Introduce un número: '
+	Leer num
+	primo <- 1
+	Si num<=1 Entonces
+		primo <- 0
+	SiNo
+		Para i<-2 Hasta Raiz(num) Con Paso 1 Hacer
+			Si num MOD i=0 Entonces
+				primo <- 0
+			FinSi
+		FinPara
+	FinSi
+	Si primo=1 Entonces
+		Escribir num, ' es primo.'
+	SiNo
+		Escribir num, ' no es primo.'
+	FinSi
+	
+FinAlgoritmo
