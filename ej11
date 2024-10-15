@@ -1,0 +1,27 @@
+Algoritmo ej11
+	//Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó 10€ , el segundo 20 €,
+	//el tercero 40 € y así sucesivamente. Realizar un algoritmo para determinar cuánto debe pagar
+	//mensualmente y el total de lo que pagó después de los 20 meses.
+	
+	
+	Definir meses, pago_inicial, pago_mensual, total_a_pagar Como Entero  
+	
+	meses <- 20
+	
+	pago_inicial <- 10
+	
+	total_a_pagar <- 0
+	
+	Para i <- 1 hasta meses Con Paso 1 
+		
+		pago_mensual <- pago_inicial * (2 ^ (i - 1))
+		
+		total_a_pagar <- total_a_pagar + pago_mensual
+		
+		Escribir "Mes ",i,": ",pago_mensual,"€"
+		
+	FinPara
+	
+	Escribir "Total a pagar: ",total_a_pagar,"€"
+	
+FinAlgoritmo
