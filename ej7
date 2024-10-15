@@ -1,0 +1,40 @@
+Algoritmo ej7
+	//Escribe un programa que pida el límite inferior y superior de un intervalo. Si el límite inferior es mayor
+	//que el superior lo tiene que volver a pedir. A continuación se van introduciendo números hasta que
+  //introducimos el 0. Cuando termine el programa dará las siguientes informaciones:
+	//La suma de los números que están dentro del intervalo (intervalo abierto).
+	//Cuántos números están fuera del intervalo.
+	//Si hemos introducido algún número igual a los límites del intervalo.
+	
+	Definir num1, num2, numero, sumaDentro, fueraIntervalo, igualLimite Como Entero
+    sumaDentro <- 0
+    fueraIntervalo <- 0
+    igualLimite <- 0
+    Repetir
+        Escribir "Introduce el límite inferior: "
+        Leer num1
+        Escribir "Introduce el límite superior: "
+        Leer num2
+        Si num1 > num2 Entonces
+            Escribir "El límite inferior no puede ser mayor que el superior"
+        FinSi
+    Hasta Que num1 <= num2
+    Repetir
+        Escribir "Introduce un número (0 para terminar): "
+        Leer num
+        Si num <> 0 Entonces
+            Si num > num1 Y num < num2 Entonces
+                sumaDentro <- sumaDentro + num
+            SiNo
+                fueraIntervalo <- fueraIntervalo + 1
+            FinSi
+            Si num = num1 o num = num2 Entonces
+                igualLimite <- igualLimite + 1
+            FinSi
+        FinSi
+    Hasta Que num = 0
+    Escribir "La suma de los números dentro del intervalo es: ", sumaDentro
+    Escribir "La cantidad de números fuera del intervalo es: ", fueraIntervalo
+    Escribir "Se introdujeron ", igualLimite, " números iguales a los límites del intervalo."
+	
+FinAlgoritmo
