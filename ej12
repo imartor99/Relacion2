@@ -1,0 +1,37 @@
+Algoritmo ej12
+	//Hacer un programa que muestre un cronómetro, indicando las horas, minutos y segundos
+	
+	Definir horas, minutos, segund, dia, semana Como Entero
+    horas <- 0
+    minutos <- 0
+    segund <- 0
+    Mientras Verdadero Hacer
+        LimpiarPantalla
+        Escribir "S",semana, ":", "D",dia, ":","H",horas, ":", "M",minutos, ":", "SEG",segund
+        
+        Esperar 1 Segundos
+		
+        segund <- segund + 1
+		
+        Si segund = 60 Entonces
+            segund <- 0
+            minutos <- minutos + 1
+        FinSi
+		
+        
+        Si minutos = 60 Entonces
+            minutos <- 0
+            horas <- horas + 1
+        FinSi
+		
+        Si horas = 24 Entonces
+            dia <- dia +1
+			horas <- 0
+        FinSi
+		si dia = 7 entonces
+			dia <- 0
+			semana <- semana + 1
+		FinSi
+    FinMientras
+	
+FinAlgoritmo
