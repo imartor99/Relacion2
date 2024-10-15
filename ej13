@@ -1,0 +1,21 @@
+Algoritmo ej13
+	//Realizar un ejemplo de menú, donde podemos escoger las distintas opciones hasta que seleccionamos
+	//la opción de "Salir".
+	
+	Escribir "Como quieres que te saludemos? (4 para salir)"
+	Leer forma
+	Mientras forma = 1 o forma = 2 o forma=3 Hacer
+		Según forma Hacer
+			1:
+			Escribir "hola shu"
+			2:
+			Escribir "buenas tardes"
+			3:
+			Escribir "Hola que tal estas"
+		FinSegún
+	FinMientras
+	
+	Escribir "Adios"
+	
+	
+FinAlgoritmo
